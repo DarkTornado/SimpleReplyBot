@@ -11,7 +11,7 @@ public class KakaoTalkListener extends NotificationListenerService {
     @Override
     public void onNotificationPosted(StatusBarNotification sbn) {
         super.onNotificationPosted(sbn);
-        if (!Bot.readBoolean(this, "botOn")) return;
+        if (!Bot.readBoolean(this, "bot_on")) return;
         if(sbn.getPackageName().equals("com.kakao.talk")) return;
         try {
             Notification.Action[] actions = sbn.getNotification().actions;
