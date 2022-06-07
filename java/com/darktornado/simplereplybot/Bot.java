@@ -9,7 +9,7 @@ public class Bot {
     private static final String PREFERENCES_NAME = "chatbot_appdata";
 
     public static String readString(Context ctx, String key) {
-        getPreferences(ctx).getString(key, null);
+        return getPreferences(ctx).getString(key, null);
     }
 
     public static void saveString(Context ctx, String key, String value) {
