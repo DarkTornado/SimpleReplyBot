@@ -1,5 +1,7 @@
 package com.darktornado.simplereplybot
 
+import android.app.Activity
+import android.app.AlertDialog
 import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,12 +9,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.*
 import android.widget.AdapterView.OnItemClickListener
-import androidx.appcompat.app.AlertDialog
-import androidx.appcompat.app.AppCompatActivity
 import com.darktornado.simplereplier.ReplyData
 import org.json.JSONArray
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : Activity() {
 
     private val names = ArrayList<String>()
     private val data = ArrayList<ReplyData>()
