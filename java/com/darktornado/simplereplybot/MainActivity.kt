@@ -65,10 +65,9 @@ class MainActivity : Activity() {
         }
         layout.addView(list)
 
-        val params = LinearLayout.LayoutParams(-1, -1)
-        val mar = dip2px(16)
-        params.setMargins(mar, mar, mar, mar)
-        layout.layoutParams = params
+        layout.layoutParams = LinearLayout.LayoutParams(-1, -1)
+        val pad = dip2px(16);
+        layout.setPadding(pad, pad, pad, pad)
         setContentView(layout)
     }
 
